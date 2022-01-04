@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gianmarcoii's personal website</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/mobile.css">
+</head>
+<body>
+    <header class="header">
+        <a href="/es" class="logo">GianmarcoII</a>
+        <ul class="menu">
+            <li><a href="/es">home</a></li
+            ><li><a href="#about">sobre mí</a></li
+            ><li><a href="#faq">faq</a></li
+            ><li><a href="#contact">contacto</a></li
+            ><li><a href="/change">cambiar de idioma</a></li>
+        </ul>
+        <box-icon name='menu-alt-right' color='#ff6978' class="hamburger_menu"></box-icon>
+    </header>
+    <div class="hero">
+        <div class="copy">
+            <h1>Bienvenido, Colega!</h1>
+            <p>Soy Gianmarco, y le doy la bienvenida a mi sitio web personal. Aquí puede encontrar información sobre mí, preguntas frecuentes de los clientes y puede ponerse en contacto conmigo. Que tenga una buena permanencia!</p>
+        </div>
+    </div>
+
+    <div id="about" class="banner">
+        <div class="img">
+            <img src="/res/about.png" alt="">
+        </div>
+        <div class="content">
+            <div class="inner">
+                <h1>Sobre mí</h1>
+                <p>Soy un chico de 16 años, crecido en Pescara, Abruzzo. Llevo más de 3 años en el mundo del desarrollo web y he desarrollado sitios para escuelas y empresas comerciales. Tengo gran experiencia en <span class="secure"> HTML, CSS, PHP, JQuery, Javascript</span>:Actualmente estoy estudiando Node.js (Este sitio fue desarrollado en Node). ¡Espero que puedas encontrar en mí la persona adecuada para tu proyecto!</p>
+                <a href="https://it.fiverr.com/gianmarcoii/be-your-web-developer-and-produce-your-website" class="cta">Trabajemos juntos</a>
+            </div>
+        </div>
+    </div>
+
+    <div id='faq' class="faq">
+        <div class="copy">
+            <div class="title">
+                <h1>Preguntas frecuentes</h1>
+                <p>Las siguientes son las preguntas más frecuentes que me hacen mis clientes antes de comprarme. Si quieres comprarme, estas preguntas frecuentes deberían ser útiles</p>
+            </div>
+            <div class="content">
+                <div class="faq_container">
+                    <details>
+                        <summary>¿Podemos hablar fuera de Fiverr?</summary>
+                        <p>Lamentablemente, si es trabajo, no ya que rompe los TOS de fiverr. Ciertamente puedo darte algún consejo sobre el proyecto (por ejemplo, actualizar las tecnologías que se utilizaron, o migrar de un servidor a otro, instalar un certificado ssl) después de que el trabajo esté hecho, pero si todavía está en curso o hay que hacer acuerdos, entonces no.</p>
+                    </details>
+                </div>
+                <div class="faq_container">
+                    <details>
+                        <summary>¿Realmente ofrecéis apoyo tras la finalización del proyecto?</summary>
+                        <p>Sí, ofrezco soporte después de la finalización del proyecto: a veces algunos clientes pueden tener problemas debido a las diferentes versiones de las tecnologías utilizadas para desarrollar el sitio. Otras veces solo necesitan asesoramiento sobre cómo configurar el servidor y hacer que su sitio funcione correctamente.</p>
+                    </details>
+                </div>
+                <div class="faq_container">
+                    <details>
+                        <summary>¿Pueden desarrollar mi sitio web con Node.js?</summary>
+                        <p>No. Como he dicho, estoy estudiando Node.js en este momento y solicitar el desarrollo de su sitio web en esta tecnología sería arriesgado ya que no tengo la experiencia necesaria todavía.</p>
+                    </details>
+                </div>
+                <div class="faq_container">
+                    <details>
+                        <summary>¿Puedo pagar fuera de Fiverr?</summary>
+                        <p>Desafortunadamente, pagar fuera de Fiverr es una violación de sus TOS (Terms of Service). Así que, por favor, paga en la plataforma cuando hayas terminado tu proyecto, para evitar discusiones innecesarias.</p>
+                    </details>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact" id="contact">
+        <div class="copy">
+            <div class="title">
+                <h1>Ponte en contacto!</h1>
+                <p>Este sitio web tiene un certificado SSL. Esto significa que <span class="secure">los datos enviados entre el servidor y el cliente son seguros. </span>Esto permite la comunicación entre usted y yo a través del sitio. Sin embargo, <span class="secure">Animo a la comunicación en los sitios de los autónomos</span> (por ejemplo, Fiverr) si está relacionado con el trabajo.</p>
+            </div>
+            <div class="content">
+                <div class="form-container">
+                    <form action="/handler" method="POST">
+                        <label for="name">Nombre</label>
+                        <input type="text" name="name" id="name">
+                        <label for="email">Email</label>
+                        <input required type="email" name="email" id="email">
+                        <label for="msg">Mensaje</label>
+                        <textarea required name="msg" id="msg"></textarea>
+                        <input type="submit" id="submit" name='submit' value="Enviar mensaje">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <a href="/it" class="logo">gianmarcoii <span>&copy;</span></a>
+        <ul class="menu">
+            <li><a href="https://icons8.com/illustrations/author/5c07e68d82bcbc0092519bb6">Icons8</a></li>
+            <li><a href="https://twitter.com/gianmarco_dev">
+                <box-icon name='twitter' color='#ff6978' type='logo' ></box-icon>
+            </a></li>
+            <li><a href="https://www.facebook.com/gianmarco.fiverr/">
+                <box-icon name='facebook' color='#ff6978' type='logo' ></box-icon>
+            </a></li>
+        </ul>
+    </footer>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+<script src="https://unpkg.com/boxicons@2.1.1/dist/boxicons.js"></script>
+<script src="/js/index.js"></script>
+</html>

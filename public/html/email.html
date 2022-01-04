@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Email Template</title>
+    </head>
+    <body style=' font-size: 1rem; font-family: "Google Sans"; font-weight: 400; background: #101010;'>
+        <main class="main-content" style=' width: 100%; height: 100vh; display: flex; flex-wrap: wrap;'>
+            <div class="copy" style=' width: 95%; margin: 5%; display: grid;'>
+                <div class="title">
+                    <h1 style=" color: #ff6978; margin-bottom: 1rem;">Nuova Email!</h1>
+                    <p style="color: #fffcf9;">Anno:{{YEAR}}. Nuovo messaggio ricevuto dal sito web alle ore: {{HOUR}}:{{MINUTE}}:{{SECONDS}}</p>
+                </div>
+                <div class="content" style=" display: flex; align-items: center; justify-content: center;">
+                    <div class="text">
+                        <span style="color: #fffcf9;">
+                            Messaggio:<br />
+                            {{MSG}}
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

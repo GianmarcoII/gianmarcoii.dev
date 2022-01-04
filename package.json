@@ -1,0 +1,21 @@
+{
+  "name": "perweb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "ejs": "3.1.6",
+    "express": "^4.17.2",
+    "isomorphic-dompurify": "0.17.0",
+    "nodemailer": "^6.7.2"
+  },
+  "devDependencies": {
+    "nodemon": "2.0.15"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

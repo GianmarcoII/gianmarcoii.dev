@@ -1,0 +1,432 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
+:root {
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: "Lato";
+  font-size: 1.6rem;
+  background: #101010;
+}
+
+.header {
+  -webkit-transition: background 500ms ease-in-out;
+  transition: background 500ms ease-in-out;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem;
+}
+
+.header .logo {
+  font-family: "Space Mono";
+  text-decoration: none;
+  color: #FF6978;
+  padding: 0.5rem;
+}
+
+.header .menu {
+  list-style-type: none;
+  -webkit-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+}
+
+.header .menu li {
+  display: inline-block;
+}
+
+.header .menu li a {
+  display: block;
+  margin: 0 1rem 0 1rem;
+  text-decoration: none;
+  font-family: "Space Mono";
+  color: #FF6978;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+  position: relative;
+  padding: .5rem;
+}
+
+.header .menu li a:hover {
+  color: #FFFCF9;
+}
+
+.header .menu li a::before {
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 1px;
+  height: 100%;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+  background: #FF6978;
+  opacity: 0;
+}
+
+.header .menu li a:hover::before {
+  width: 100%;
+  background: #FF6978;
+  color: #FFFCF9;
+  z-index: -1;
+  opacity: 1;
+}
+
+.header .hamburger_menu {
+  cursor: pointer;
+  display: none;
+}
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hero .copy {
+  width: 90%;
+  margin: 10%;
+}
+
+.hero .copy h1 {
+  color: #FF6978;
+  font-family: "Space Mono";
+  font-weight: 700;
+  text-decoration: overline;
+  letter-spacing: -0.125rem;
+}
+
+.hero .copy p {
+  color: #FFFCF9;
+  letter-spacing: -0.0125rem;
+  margin-top: 1rem;
+  text-align: left;
+}
+
+.banner {
+  width: 90%;
+  height: 70vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.banner .img, .banner .content {
+  width: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 50%;
+          flex: 1 0 50%;
+  height: 100%;
+}
+
+.banner .img img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.banner .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.banner .content .inner {
+  margin: 90%;
+  margin: 10%;
+}
+
+.banner .content .inner h1 {
+  color: #FF6978;
+  text-decoration: overline;
+  font-family: "Space Mono";
+  margin-bottom: 1rem;
+  letter-spacing: -0.125rem;
+}
+
+.banner .content .inner p {
+  color: #FFFCF9;
+  letter-spacing: -0.0125rem;
+}
+
+.banner .content .inner p .secure {
+  color: #FF6978;
+  font-weight: 700;
+}
+
+.banner .content .inner .cta {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: .5rem;
+  text-decoration: none;
+  color: #FFFCF9;
+  background: #FF6978;
+  text-transform: capitalize;
+  font-family: "Space Mono";
+  letter-spacing: -0.125rem;
+}
+
+.faq {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.faq .copy {
+  width: 90%;
+  margin: 10%;
+  display: -ms-grid;
+  display: grid;
+}
+
+.faq .copy .title h1 {
+  font-family: "Space Mono";
+  color: #FF6978;
+  margin-bottom: 1rem;
+  letter-spacing: -0.125rem;
+  text-decoration: overline;
+}
+
+.faq .copy .title p {
+  color: #FFFCF9;
+  margin-bottom: 5rem;
+  letter-spacing: -0.0125rem;
+}
+
+.faq .copy .content .faq_container details summary {
+  cursor: pointer;
+}
+
+.faq .copy .content .faq_container details summary > * {
+  display: inline;
+}
+
+.faq .copy .content .faq_container summary {
+  font-family: "Space Mono";
+  color: #FF6978;
+  margin-bottom: 1rem;
+}
+
+.faq .copy .content .faq_container details {
+  color: #FFFCF9;
+  margin-bottom: 2rem;
+  letter-spacing: -0.0125rem;
+}
+
+.contact {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.contact .copy {
+  width: 90%;
+  margin: 10%;
+  display: -ms-grid;
+  display: grid;
+}
+
+.contact .copy .title h1 {
+  font-family: "Space Mono";
+  color: #FF6978;
+  margin-bottom: 1rem;
+  letter-spacing: -0.125rem;
+  text-decoration: overline;
+}
+
+.contact .copy .title p {
+  color: #FFFCF9;
+  margin-bottom: 5rem;
+  letter-spacing: -0.0125rem;
+}
+
+.contact .copy .title .secure {
+  color: #FF6978;
+  font-weight: 700;
+}
+
+.contact .copy .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact .copy .content .form-container label, .contact .copy .content .form-container input, .contact .copy .content .form-container textarea {
+  display: -ms-grid;
+  display: grid;
+}
+
+.contact .copy .content .form-container label {
+  color: #FF6978;
+  font-family: "Space Mono";
+  margin-bottom: 1rem;
+}
+
+.contact .copy .content .form-container input, .contact .copy .content .form-container textarea {
+  margin-bottom: 1rem;
+  min-width: 250px;
+  padding: 0.25rem;
+}
+
+.contact .copy .content .form-container textarea {
+  height: 200px;
+}
+
+.contact .copy .content .form-container #submit {
+  font-family: "Space Mono";
+  font-weight: 400;
+  border: 0;
+  background: #FF6978;
+  cursor: pointer;
+  color: #FFFCF9;
+}
+
+.lang-change {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.lang-change .italian, .lang-change .english, .lang-change .spanish, .lang-change .french {
+  margin: 0 1rem 0 1rem;
+  display: -ms-grid;
+  display: grid;
+  padding: 10rem;
+}
+
+.lang-change .italian a img, .lang-change .english a img, .lang-change .spanish a img, .lang-change .french a img {
+  max-width: 100px;
+  width: 90%;
+  height: 100%;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+.lang-change .italian a img:hover, .lang-change .english a img:hover, .lang-change .spanish a img:hover, .lang-change .french a img:hover {
+  width: 100%;
+}
+
+.lang-change .italian p, .lang-change .english p, .lang-change .spanish p, .lang-change .french p {
+  margin-top: 1rem;
+  text-align: center;
+  color: #FF6978;
+  font-family: "Space Mono";
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  padding: 1rem;
+}
+
+.footer .logo {
+  text-decoration: none;
+  color: #FF6978;
+  font-family: "Space Mono";
+}
+
+.footer .logo span {
+  font-family: "Lato";
+}
+
+.footer li {
+  display: inline-block;
+}
+
+.footer li a {
+  text-decoration: none;
+  color: #FF6978;
+  font-family: "Space Mono";
+}
+
+.footer .menu {
+  list-style-type: none;
+}
+
+.footer .menu li {
+  display: inline-block;
+}
+
+.footer .menu li a {
+  text-decoration: none;
+  color: #FF6978;
+  font-family: "Space Mono";
+}
